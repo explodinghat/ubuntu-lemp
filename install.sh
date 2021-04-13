@@ -16,10 +16,14 @@ y
 y
 EOF
 
+sudo apt install php -y php-mysql -y php-fpm -y
+
+sudo rm /etc/php/7.4/fpm/pool.d/www.conf
+
+cp ./www.conf /etc/php/7.4/fpm/pool.d/www.conf
+
 sudo rm -r /etc/nginx/sites-available/default
 
 cp ./default /etc/nginx/sites-available/default
-
-sudo apt install php -y php-mysql -y php-fpm -y
 
 echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
