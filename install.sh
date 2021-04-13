@@ -18,7 +18,9 @@ y
 y
 EOF
 
-sudo apt install php -y php-mysql -y php-fpm -y
+sudo apt install php-mysql -y php-fpm -y
+
+sudo apt install php
 
 sudo rm /etc/php/7.4/fpm/pool.d/www.conf
 
