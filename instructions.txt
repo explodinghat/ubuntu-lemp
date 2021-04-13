@@ -1,0 +1,11 @@
+wget --no-check-certificate --content-disposition https://github.com/explodinghat/ubuntu-lemp/archive/refs/heads/main.zip
+
+sudo apt install unzip
+
+unzip ubuntu [tab]
+
+cd ubuntu[tab]
+
+chmod +x ./install.sh
+
+sudo ./install.sh 
