@@ -16,10 +16,10 @@ y
 y
 EOF
 
-sudo rm /etc/nginx/sites-available/default
+sudo rm -r /etc/nginx/sites-available/default
 
 cp ./default /etc/nginx/sites-available/default
 
-sudo apt install php php-mysql php-fpm
+sudo apt install php -y php-mysql -y php-fpm -y
 
 echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
