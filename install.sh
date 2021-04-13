@@ -4,7 +4,7 @@
 
 sudo apt update -y && sudo apt install nginx -y
 
-sudo apt install mariadb-server mariadb-client
+sudo apt install mariadb-server mariadb-client -y
 
 mysql_secure_installation <<EOF
 
