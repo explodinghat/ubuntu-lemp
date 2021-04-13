@@ -15,3 +15,11 @@ y
 y
 y
 EOF
+
+sudo rm /etc/nginx/sites-available/default
+
+cp ./default /etc/nginx/sites-available/default
+
+sudo apt install php php-mysql php-fpm
+
+echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
