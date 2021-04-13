@@ -2,7 +2,7 @@
 
 #run as root
 
-sudo apt update && sudo apt install nginx
+sudo apt update -y && sudo apt install nginx -y
 
 sudo apt install mariadb-server mariadb-client
 
