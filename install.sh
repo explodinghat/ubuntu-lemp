@@ -20,7 +20,7 @@ EOF
 
 sudo apt install php-mysql -y php-fpm -y
 
-sudo apt install php
+sudo apt install php -y
 
 sudo rm /etc/php/7.4/fpm/pool.d/www.conf
 
@@ -30,4 +30,3 @@ sudo rm -r /etc/nginx/sites-available/default
 
 cp ./default /etc/nginx/sites-available/default
 
-echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
