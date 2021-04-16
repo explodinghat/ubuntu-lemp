@@ -30,3 +30,11 @@ sudo rm -r /etc/nginx/sites-available/default
 
 cp ./default /etc/nginx/sites-available/default
 
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+chmod +x wp-cli.phar
+
+#Optionally, we can move wp-cli.phar to a folder and rename it to wp. This will help us use the WP-CLI commands by just typing ‘wp’ at the start of the commands.
+sudo mv wp-cli.phar /usr/local/bin/wp
+
+
